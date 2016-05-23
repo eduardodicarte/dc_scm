@@ -10,6 +10,6 @@
 #
 # Sample Usage:
 #
-class dc_scm {
+class dc_scm(String $httpServer, String $configAccept) {
   include ::dc_scm::dependencies
 }
