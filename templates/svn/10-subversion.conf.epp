@@ -2,10 +2,10 @@ LoadModule dav_svn_module     modules/mod_dav_svn.so
 LoadModule authz_svn_module   modules/mod_authz_svn.so
 LoadModule dontdothat_module  modules/mod_dontdothat.so
 
-Alias /svn /var/www/svn
-<Location /svn>
+Alias /<%= $alias_svn %> /var/www/<%= $alias_svn %>
+<Location /<%= $alias_svn %>>
 DAV svn
-SVNParentPath /var/www/svn/
+SVNParentPath /var/www/<%= $alias_svn %>
 AuthType Basic
 AuthName "SVN Repository"
 AuthUserFile /etc/svn-auth-accounts

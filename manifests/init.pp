@@ -10,12 +10,13 @@
 #
 # Sample Usage:
 #
-class dc_scm (String $httpServer, String $configAccept, String $servidorSCM) {
+class dc_scm (String $httpServer, String $configAccept, String $servidorSCM, String $repositoryPath) {
   
   include ::dc_scm::dependencies
 
   if $servidorSCM == "svn" {
     include dc_scm::svn::install
+    include dc_scm::svn::config
   } elsif $servidorSCM == "git" {
     include dc_scm::git::install
   }
