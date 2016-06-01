@@ -1,1 +1,1 @@
-svnadmin:$apr1$yfNLWfsb$fI3pfNlD.5tj5ls7N.T9n/
+<%= $svn_user %>:<%= $svn_pass %>
