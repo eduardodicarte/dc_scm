@@ -10,7 +10,7 @@
 #
 # Sample Usage:
 #
-class dc_scm (String $httpServer, String $configAccept, String $servidorSCM, String $repositoryPath) {
+class dc_scm (String $httpServer, String $configAccept, String $servidorSCM, String $repositoryPath, String $svnUser, String $svnPass, String $svnRepoName) {
   
   include ::dc_scm::dependencies
 
